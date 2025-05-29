@@ -10,6 +10,10 @@ This project is a pixel-perfect recreation of a provided UI design. It features:
 - Static mock data passed via props
 - Clean and professional styling using CSS modules
 
+## Live Site
+
+https://healthcare-dashboard-iota-three.vercel.app/
+
 
 ## Getting Started Locally
 
