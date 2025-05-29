@@ -39,6 +39,11 @@ https://healthcare-dashboard-iota-three.vercel.app/
 - JSX and ES Modules
 - Deployed on Vercel
 
+## 📄 Resume
+
+You can find my resume in a separate GitHub repository:  
+🔗 [View Resume Repository](https://github.com/CodeWithPiyush0/Resume)
+
 ## Author
 
 Piyush Kumar  
