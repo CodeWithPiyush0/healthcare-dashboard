@@ -1,0 +1,346 @@
+.anatomy-section {
+    height: 100%;
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-shrink: 0;
+}
+
+.dashboard-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(30 35 91);
+    margin: 0;
+}
+
+.this-week-btn {
+    background: transparent;
+    border: none;
+    color: rgb(30 35 91);
+    font-size: 14px;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.this-week-btn:hover {
+    background-color: #f1f5f9;
+}
+
+.dropdown-arrow {
+    font-size: 10px;
+}
+
+.anatomy-container {
+    display: flex;
+    gap: 24px;
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+}
+
+.anatomy-image-container {
+    position: relative;
+    flex: 0 0 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anatomy-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.magnify-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.magnify-icon-svg {
+    font-size: 16px;
+    color: #64748b;
+}
+
+.anatomy-indicators {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.indicator {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgb(56 53 162);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    white-space: nowrap;
+}
+
+.indicator-icon-svg {
+    font-size: 14px;
+}
+
+.healthy-heart {
+    top: 28%;
+    right: -10px;
+}
+
+.healthy-leg {
+    bottom: 32%;
+    left: 0px;
+    background: #06b6d4;
+    box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+}
+
+.health-status-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: auto;
+    padding-right: 8px;
+}
+
+.health-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.card-icon-container {
+    width: 48px;
+    height: 48px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon-svg {
+    font-size: 24px;
+    color: #64748b;
+}
+
+.card-info {
+    flex: 1;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0 0 4px 0;
+}
+
+.card-date {
+    font-size: 13px;
+    color: #64748b;
+    margin: 0;
+}
+
+.progress-container {
+    width: 100%;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #e2e8f0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.6s ease;
+}
+
+.details-btn {
+    background: transparent;
+    border: none;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 0;
+    margin-top: auto;
+    transition: color 0.2s;
+}
+
+.details-btn:hover {
+    color: #3b82f6;
+}
+
+.details-arrow {
+    transition: transform 0.2s;
+}
+
+.details-btn:hover .details-arrow {
+    transform: translateX(4px);
+}
+
+
+
+/* For Tab */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .anatomy-section {
+        padding: 20px;
+    }
+    
+    .anatomy-container {
+        gap: 20px;
+    }
+    
+    .anatomy-image-container {
+        flex: 0 0 240px;
+    }
+    
+    .dashboard-title {
+        font-size: 22px;
+    }
+    
+    .health-card {
+        padding: 16px;
+    }
+    
+    .card-icon-container {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .card-icon-svg {
+        font-size: 20px;
+    }
+}
+
+/* For Mobil */
+@media (max-width: 767px) {
+    .anatomy-section {
+        padding: 16px;
+    }
+    
+    .dashboard-header {
+        margin-bottom: 20px;
+    }
+    
+    .dashboard-title {
+        font-size: 20px;
+    }
+    
+    .anatomy-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .anatomy-image-container {
+        flex: 0 0 auto;
+        height: 280px;
+    }
+    
+    .anatomy-image {
+        max-height: 280px;
+    }
+    
+    .magnify-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .magnify-icon-svg {
+        font-size: 14px;
+    }
+    
+    .indicator {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .healthy-heart {
+        top: 25%;
+        right: 120px;
+    }
+    
+    .healthy-leg {
+        bottom: 28%;
+        left: 120px;
+    }
+    
+    .health-status-cards {
+        padding-right: 0;
+    }
+    
+    .health-card {
+        padding: 16px;
+    }
+    
+    .card-icon-container {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .card-icon-svg {
+        font-size: 20px;
+    }
+    
+    .card-title {
+        font-size: 15px;
+    }
+    
+    .card-date {
+        font-size: 12px;
+    }
+    
+    .details-btn {
+        font-size: 13px;
+    }
+}

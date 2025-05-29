@@ -1,0 +1,238 @@
+.calendar-container {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.month-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(30 35 91);
+    margin: 0;
+}
+
+.nav-arrows {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-arrow {
+    background: transparent;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    color: rgb(30 35 91);
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.nav-arrow:hover {
+    background-color: #F3F4F6;
+}
+
+.calendar-grid {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    margin-bottom: 16px;
+}
+
+.days-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 8px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.day-header {
+    color: #6B7280;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 0;
+}
+
+.dates-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 16px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.date-cell {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1F2937;
+    padding: 6px;
+}
+
+.time-slots-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-height: 0;
+}
+
+.time-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.time-slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+}
+
+.time-pill {
+    padding: 6px 10px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 50px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.normal-slot {
+    color: #6B7280;
+}
+
+.highlighted-slot {
+    background: rgb(56 53 162);
+    color: white;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+}
+
+.secondary-slot {
+    background: #E0E7FF;
+    color: rgb(30 35 91);
+}
+
+.empty-slot {
+    color: #9CA3AF;
+}
+
+.appointment-cards {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+    height: 100px; 
+}
+
+.appointment-card {
+    flex: 1;
+    padding: 16px;
+    border-radius: 16px;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+}
+
+.appointment-card.dentist-card {
+    background: rgb(56 53 162);
+    color: white;
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+}
+
+.appointment-card.physio-card {
+    background: #E0E7FF;
+    color: rgb(30 35 91);
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.card-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 4px;
+}
+
+.dentist-card h3{
+    color: white;
+}
+
+.physio-card h3{
+    color: rgb(30 35 91);
+}
+
+.card-time {
+    font-size: 12px;
+    margin: 0 0 2px;
+    opacity: 0.9;
+}
+
+.card-doctor {
+    font-size: 11px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.card-icon {
+    width: 32px;
+    height: 32px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+.appointment-card.dentist-card .card-icon {
+    background: rgba(255, 255, 255, 0.9);
+    color: #4338CA;
+}
+
+.appointment-card.physio-card .card-icon {
+    background: white;
+    color: #4338CA;
+}
+
+@media (max-width: 1024px) {
+    .calendar-container {
+        padding: 16px;
+    }
+
+    .appointment-cards {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .time-pill {
+        min-width: 40px;
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}

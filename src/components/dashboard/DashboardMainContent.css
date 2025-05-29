@@ -1,0 +1,118 @@
+.dashboard-main { 
+  flex: 1; 
+  padding: 20px; 
+  background: #f8fafc; 
+  display: flex; 
+  flex-direction: column; 
+  min-height: calc(100vh - 73px);
+  box-sizing: border-box; 
+} 
+ 
+.dashboard-content { 
+  display: grid; 
+  grid-template-columns: minmax(0, 0.5fr) minmax(0, 0.5fr); 
+  gap: 20px; 
+  flex: 1; 
+  min-height: 0; 
+} 
+ 
+.dashboard-left, 
+.dashboard-right { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 16px; 
+  min-height: 0; 
+} 
+ 
+.anatomy-wrapper { 
+  flex: 3; 
+  min-height: 0; 
+  overflow: auto; 
+} 
+ 
+.activity-wrapper { 
+  flex: 1; 
+  min-height: 0; 
+  overflow: hidden; 
+} 
+ 
+.calendar-wrapper { 
+  flex: 3; 
+  min-height: 0; 
+  overflow: auto; 
+} 
+ 
+.schedule-wrapper { 
+  flex: 2; 
+  min-height: 0; 
+  overflow: auto; 
+} 
+
+/* Responsiv */
+@media (max-width: 1024px) { 
+  .dashboard-main {
+    padding: 16px;
+  }
+
+  .dashboard-content { 
+    grid-template-columns: 1fr; 
+    gap: 16px;
+  } 
+   
+  .dashboard-left, 
+  .dashboard-right { 
+    gap: 16px; 
+  } 
+   
+  .anatomy-wrapper, 
+  .activity-wrapper, 
+  .calendar-wrapper, 
+  .schedule-wrapper { 
+    flex: 0 0 auto; 
+    min-height: 300px; 
+  } 
+}
+
+@media (max-width: 768px) {
+  .dashboard-main {
+    padding: 12px;
+  }
+
+  .dashboard-content {
+    gap: 12px;
+  }
+
+  .dashboard-left,
+  .dashboard-right {
+    gap: 12px;
+  }
+
+  .anatomy-wrapper,
+  .activity-wrapper,
+  .calendar-wrapper,
+  .schedule-wrapper {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-main {
+    padding: 8px;
+  }
+
+  .dashboard-content {
+    gap: 8px;
+  }
+
+  .dashboard-left,
+  .dashboard-right {
+    gap: 8px;
+  }
+
+  .anatomy-wrapper,
+  .activity-wrapper,
+  .calendar-wrapper,
+  .schedule-wrapper {
+    min-height: 200px;
+  }
+}
