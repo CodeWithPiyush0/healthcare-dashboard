@@ -1,12 +1,42 @@
-# React + Vite
+# Healthcare Dashboard (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A static healthcare dashboard built using React and Vite, developed as part of a frontend developer job assignment.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a pixel-perfect recreation of a provided UI design. It features:
+- A responsive dashboard layout
+- Modular React components
+- Static mock data passed via props
+- Clean and professional styling using CSS modules
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started Locally
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/CodeWithPiyush0/healthcare-dashboard.git
+   cd healthcare-dashboard
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start development server:
+   ```bash
+   npm run dev
+   ```
+
+## Tech Stack
+
+- React (with Vite)
+- CSS Modules
+- JSX and ES Modules
+- Deployed on Vercel
+
+## Author
+
+Piyush Kumar  
+Email: piyush0codes@gmail.com  
+GitHub: https://github.com/CodeWithPiyush0
